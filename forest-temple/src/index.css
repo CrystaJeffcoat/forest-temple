@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(201,208,214,255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header-letters {
+  display: none;
+  color: rgb(29, 165, 154);
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.ml9 {
+  font-family: 'Questrial', sans-serif;
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+  color: rgb(29, 165, 154);
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+#title {
+  position: relative;
+  animation-name: title;
+  animation-duration: 3s;
+}
+
+@keyframes title {
+  0% {left: 50%; top: 50%;}
+  100% {left: 0; top: 0;}
 }
